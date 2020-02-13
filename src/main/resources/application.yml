@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost/haircut?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+  mvc:
+    static-path-pattern: /**
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.mi.domain
+server:
+  servlet:
+    context-path: /swagger
+  port: 8090
+
+
